@@ -36,10 +36,11 @@
 		font-weight:300;
 	}
 	.page-title {
-		font-size: 52px;
+		font-size: 46px;
 		font-weight: 600;
 		line-height: 1.08;
 		letter-spacing: -0.8px;
+		white-space: nowrap;
 		background: linear-gradient(90deg, #0f4c81, #1f8ac0 55%, #6a3cc7);
 		-webkit-background-clip: text;
 		background-clip: text;
@@ -169,6 +170,19 @@
   clear: both;
   display: table;
 }
+
+	.video-title {
+		font-size: 36px;
+		font-weight: 650;
+		letter-spacing: 0.2px;
+		color: #123e68;
+		text-shadow: 0 2px 10px rgba(31, 138, 192, 0.16);
+		margin: 26px 0 14px;
+	}
+
+	video.synthetic-video {
+		max-width: 792px;
+	}
 
 </style>
 
@@ -343,17 +357,17 @@
 			<!-- <tr> -->
 			<center><h1>Results</h1></center>
 
-			<center><h3>Synthetic scenes:</h3></center>
+			<center><h3 class="video-title">Synthetic scenes:</h3></center>
 
 		<center>
-	<video class="paper-video" controls>
+	<video class="paper-video synthetic-video" controls>
 					<source src="./resources/lego1.mp4" type="video/mp4"/>
 		</video>
 		</center>
 
 
 
-			<center><h3>Forward facing scenes:</h3></center>
+			<center><h3 class="video-title">Forward facing scenes:</h3></center>
 		<center>
 			<video class="paper-video" controls>
 						<source src="./resources/ff_final.mp4" type="video/mp4"/>
@@ -393,7 +407,7 @@
 <!--				<img class="round" style="width:800px" src="./resources/ff2.png"/>-->
 <!--			</center>-->
 
-		<center><h3>Real world 360<span>&#176;</span> bounded\unbounded scenes:</h3></center>
+		<center><h3 class="video-title">Real world 360<span>&#176;</span> bounded\unbounded scenes:</h3></center>
 
 <!--			<center>-->
 <!--				<img class="round" style="width:800px" src="./resources/beta.png"/>-->
