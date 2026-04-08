@@ -67,6 +67,15 @@
 		-webkit-border-radius: 10px ;
 	}
 	
+
+	video.paper-video {
+		display: block;
+		width: 100%;
+		max-width: 990px;
+		height: auto;
+		margin: 0 auto;
+	}
+
 	img.rounded {
 		border: 1px solid #eeeeee;
 		border-radius: 10px ;
@@ -173,7 +182,7 @@
 	</center>
 
 	<center>
-		<video width="990" height="360" controls autoplay loop>
+		<video class="paper-video" controls autoplay loop>
 					<source src="./resources/video1.mp4" type="video/mp4"/>
 		</video>
 		<br>		<br>
@@ -294,7 +303,7 @@
 	</div>
 	<br>		<br>
 	<center>
-	<video width="990" height="480" controls>
+	<video class="paper-video" controls>
 					<source src="./resources/training_process_low.mp4" type="video/mp4"/>
 		</video>
 		</center>
@@ -309,7 +318,7 @@
 			<center><h3>Synthetic scenes:</h3></center>
 
 		<center>
-	<video width="720" height="720" controls>
+	<video class="paper-video" controls>
 					<source src="./resources/lego1.mp4" type="video/mp4"/>
 		</video>
 		</center>
@@ -318,7 +327,7 @@
 
 			<center><h3>Forward facing scenes:</h3></center>
 		<center>
-			<video width="990" height="440" controls>
+			<video class="paper-video" controls>
 						<source src="./resources/ff_final.mp4" type="video/mp4"/>
 			</video>
 		</center>
@@ -362,7 +371,7 @@
 <!--				<img class="round" style="width:800px" src="./resources/beta.png"/>-->
 <!--			</center>-->
 			<center>
-		<video width="990" height="480" controls>
+		<video class="paper-video" controls>
 					<source src="./resources/hard_scenes.mp4" type="video/mp4"/>
 		</video>
 			</center>
