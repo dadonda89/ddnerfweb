@@ -35,6 +35,47 @@
 		font-size:32px;
 		font-weight:300;
 	}
+	.page-title {
+		font-size: 52px;
+		font-weight: 600;
+		line-height: 1.08;
+		letter-spacing: -0.8px;
+		background: linear-gradient(90deg, #0f4c81, #1f8ac0 55%, #6a3cc7);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+		text-shadow: 0 3px 18px rgba(22, 75, 123, 0.22);
+	}
+	.links-grid {
+		display: grid;
+		grid-template-columns: repeat(5, minmax(0, 1fr));
+		gap: 14px;
+		width: 980px;
+		margin: 0 auto;
+	}
+	.link-card {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 84px;
+		padding: 12px 10px;
+		background: linear-gradient(180deg, #ffffff, #f3f8ff);
+		border: 1px solid #c9dced;
+		border-radius: 12px;
+		box-shadow: 0 6px 14px rgba(27, 90, 148, 0.12);
+		transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+		text-align: center;
+	}
+	.link-card:hover {
+		transform: translateY(-2px);
+		border-color: #91b7de;
+		box-shadow: 0 10px 18px rgba(27, 90, 148, 0.2);
+	}
+	.link-card a {
+		font-size: 22px;
+		font-weight: 500;
+		line-height: 1.2;
+	}
 	.line {
 		margin:5px 300;
 		height:1px;
@@ -145,7 +186,7 @@
 <body>
 	<br>
 	<center>
-		<span style="font-size:36px">DDNeRF: Depth Distribution Neural Radiance fields</span>
+		<span class="page-title">DDNeRF: Depth Distribution Neural Radiance fields</span>
 		<table align=center width=600px>
 			<table align=center width=600px>
 				<tr>
@@ -180,36 +221,23 @@
 
 
 
-		<table align=center width=850px>
-			<tr>
-				<td align=center width=220px>
-					<center>
-						<span style="font-size:24px"><a href='https://openaccess.thecvf.com/content/WACV2023/html/Dadon_DDNeRF_Depth_Distribution_Neural_Radiance_Fields_WACV_2023_paper.html'>Paper [WACV 2023]</a></span>
-					</center>
-				</td>
-				<td align=center width=150px>
-					<center>
-						<span style="font-size:24px"><a href="./resources/ddnerf_poster.pdf" download>Poster</a></span><br>
-					</center>
-				</td>
-				<td align=center width=150px>
-					<center>
-						<span style="font-size:24px"><a href='https://github.com/dadonda89/DDNeRF'>Code</a></span><br>
-					</center>
-				</td>
-				<td align=center width=150px>
-					<center>
-						<span style="font-size:24px"><a href='https://www.youtube.com/watch?v=h4eJhGClPFE'>Video</a></span><br>
-					</center>
-				</td>
-				<td align=center width=220px>
-					<center>
-						<span style="font-size:24px"><a href='https://www.youtube.com/watch?v=De_1w79YiaA'>Presentation [Tel Aviv Vision Day 2023]</a></span><br>
-					</center>
-				</td>
-
-			</tr>
-		</table>
+		<div class="links-grid">
+			<div class="link-card">
+				<a href='https://openaccess.thecvf.com/content/WACV2023/html/Dadon_DDNeRF_Depth_Distribution_Neural_Radiance_Fields_WACV_2023_paper.html'>Paper [WACV 2023]</a>
+			</div>
+			<div class="link-card">
+				<a href="./resources/ddnerf_poster.pdf" download>Poster</a>
+			</div>
+			<div class="link-card">
+				<a href='https://github.com/dadonda89/DDNeRF'>Code</a>
+			</div>
+			<div class="link-card">
+				<a href='https://www.youtube.com/watch?v=h4eJhGClPFE'>Video</a>
+			</div>
+			<div class="link-card">
+				<a href='https://www.youtube.com/watch?v=De_1w79YiaA'>Presentation [Tel Aviv Vision Day 2023]</a>
+			</div>
+		</div>
 
 		<br>
 
